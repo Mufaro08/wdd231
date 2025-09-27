@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mufaro Justice Tapera">
+    <meta name="description" content="This is a Directory page for he chamber of Commerce">
+    <link rel="icon" href="./favicon/city_hall.jpg">
+    <meta property="og:title" content="Home_Page">
+    <meta property="og:description" content="This is a Home page page for he chamber of Commerce">
+    <meta property="og:url" content="https://mufaro08.github.io/wdd231/chamber/index.html">
+    <meta property="og:image" content="/favicon/city_hall.jpg">
+    <meta property="og:image:width" content="398">
+    <meta property="og:image:height" content="299x">
+    <meta property="og:type" content="website">
+    <meta property="twitter:title" content="Home_Page">
+    <meta property="twitter:description" content="This is a home page page for he chamber of Commerce">
+    <meta property="twitter:url" content="https://mufaro08.github.io/wdd231/chamber/index.html">
+    <meta property="twitter:image" content="./favicon/city_hall.jpg">
+    <meta property="twitter:type" content="website">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="./scripts/script.js" defer></script>
+    
+
+    <title>Home Page</title>
+
+</head>
+<body>
+    <header>
+         <div class="container1">
+            <div class="logo">
+            <img src="./images/city_hall.jpg" alt="Harare Chamber of Commerce Logo">
+            <h1>Harare Chamber of Commerce</h1>
+            </div>
+
+            <div class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+            </div>
+
+            <nav id="nav-menu">
+            <ul>
+                <li class="active-link"><a href="./index.html">Home</a></li>
+                <li><a href="#">Chamber Project</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" aria-labelledby="hero-heading">
+            <div class="hero-content">
+                <h1 id="hero-heading">Empowering Business, <br> Growing Harare.</h1>
+                <p>Join the premier network for success in Zimbabwe's capital city.</p>
+                <a href="./join.html" class="cta-button" >
+                    Join the Chamber Today
+                </a>
+            </div>
+        </section>
+
+        <div class="main-layout-grid">
+
+            <div class="left-column">
+
+                <section class="section-card events" aria-labelledby="events-heading">
+                    <h2 id="events-heading">Current Event(s)</h2>
+                    <div id="events-list" class="content-body">
+                        <p class="placeholder">Loading upcoming events...</p>
+                    </div>
+                </section>
+
+                <section class="section-card spotlights" aria-labelledby="spotlights-heading">
+                    <h2 id="spotlights-heading">Member Spotlights </h2>
+                    <div id="spotlight-container" class="content-body">
+                        </div>
+                </section>
+
+            </div>
+
+            <aside class="right-column" aria-label="Harare Weather Information">
+                <div class="section-card weather-card">
+                    <h2>Harare Weather</h2>
+                    <div id="weather-info" class="content-body">
+                        <p class="placeholder">Fetching weather data...</p>
+                    </div>
+                </div>
+            </aside>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p id="myName"></p>
+        <p id="copyright"></p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>    

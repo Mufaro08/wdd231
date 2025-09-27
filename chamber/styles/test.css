@@ -1,0 +1,444 @@
+/* General Reset & Performance
+:root {
+    --primary-color: #004d99; 
+    --secondary-color: #ffcc00; 
+    --text-dark: #333;
+    --text-light: #fff;
+    --background-light: #f4f4f4;
+    --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    --border-radius: 8px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-dark);
+    background-color: var(--background-light);
+    line-height: 1.6;
+}
+
+
+h1, h2, h3 {
+    margin-bottom: 0.5em;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 0.2em;
+    margin-bottom: 1em;
+}
+
+
+.hero {
+    
+    background-image: linear-gradient(rgba(0, 77, 153, 0.7), rgba(0, 77, 153, 0.7)), url('harare-skyline-placeholder.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 60vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-light);
+    text-align: center;
+    margin-bottom: 30px;
+    
+    background-color: var(--primary-color);
+}
+
+.hero-content {
+    max-width: 900px;
+    padding: 20px;
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    margin-bottom: 25px;
+}
+
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color); 
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.2s;
+    font-size: 1.1rem;
+    border: 2px solid transparent; 
+}
+
+.cta-button:hover, .cta-button:focus {
+    background-color: #ffd633; 
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    outline: none; 
+    border: 2px solid var(--text-light); 
+}
+
+
+.main-layout-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr; 
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 30px;
+}
+
+
+.section-card {
+    background-color: var(--text-light);
+    padding: 25px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--card-shadow);
+    margin-bottom: 30px; 
+}
+
+.content-body {
+    padding-top: 5px;
+}
+
+
+.event-item {
+    padding: 10px 0;
+    border-bottom: 1px dashed #ddd;
+    transition: background-color 0.2s;
+}
+
+.event-item:last-child {
+    border-bottom: none;
+}
+
+.event-item:hover {
+    background-color: #fafafa;
+}
+
+.event-item h3 {
+    font-size: 1.15rem;
+    color: var(--primary-color);
+}
+
+.event-item p {
+    font-size: 0.95rem;
+    color: #666;
+}
+
+
+.weather-card {
+    text-align: center;
+}
+
+#weather-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.weather-icon {
+    font-size: 3rem;
+    color: var(--secondary-color);
+}
+
+.temperature {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--text-dark);
+}
+
+.location {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+
+
+.spotlight-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.spotlight-item:last-child {
+    border-bottom: none;
+}
+
+.company-logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--secondary-color);
+    
+}
+
+.company-details h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: var(--primary-color);
+}
+
+.company-details p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+
+.placeholder {
+    font-style: italic;
+    color: #999;
+    padding: 10px;
+    text-align: center;
+}
+
+
+@media (max-width: 900px) {
+    .main-layout-grid {
+        grid-template-columns: 1fr; 
+        padding: 0 15px 30px;
+    }
+
+    .hero {
+        height: 45vh;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .cta-button {
+        font-size: 1rem;
+        padding: 12px 25px;
+    }
+
+    .spotlight-item {
+        flex-direction: column;
+        text-align: center;
+    }
+} */
+
+
+
+:root {
+    --color-primary: #75b9be;    
+    --color-secondary: #a8ccc9;  
+    --color-accent-1: #b3d6c6;    
+    --color-accent-2: #c7d66d;    
+    --color-background: #F8F8FF;  
+    --color-text: #000000;            
+    --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    --border-radius: 8px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: var(--color-text); 
+    background-color: var(--color-background);
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3 {
+    margin-bottom: 0.5em;
+    font-weight: 700;
+}
+
+.hero {
+    background: 
+        linear-gradient(rgba(117, 185, 190, 0.85), rgba(117, 185, 190, 0.85)), /* 85% opacity of --color-primary */
+        url('../images/city_hall.jpg') no-repeat center center / cover;
+    
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text); 
+    text-align: center;
+    margin-bottom: 30px;
+    
+}
+
+.hero-content {
+    max-width: 900px;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem); 
+    color: var(--color-text); 
+}
+
+.hero-content p {
+    color: var(--color-text);
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: var(--color-accent-2); 
+    color: var(--color-text); 
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.2s;
+    font-size: 1.1rem;
+    border: 3px solid transparent; 
+}
+
+.cta-button:hover {
+    background-color: #d7e67d; 
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.cta-button:focus {
+    outline: none; 
+    border: 3px solid var(--color-text); 
+    box-shadow: 0 0 0 5px var(--color-primary);
+}
+
+.main-layout-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 30px;
+}
+
+
+.section-card {
+    background-color: var(--color-background); 
+    padding: 25px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--card-shadow);
+    margin-bottom: 30px; 
+    border-top: 5px solid var(--color-primary); 
+}
+
+.section-card h2 {
+    color: var(--color-primary); 
+    border-bottom: 2px solid var(--color-secondary); 
+    padding-bottom: 0.2em;
+    margin-bottom: 1em;
+}
+
+
+.event-item {
+    padding: 10px 0;
+    border-bottom: 1px solid var(--color-secondary);
+}
+
+.event-item h3 {
+    font-size: 1.15rem;
+    color: var(--color-primary); 
+}
+
+
+.weather-card {
+    text-align: center;
+}
+
+.weather-icon {
+    font-size: 3rem;
+    color: var(--color-accent-2); 
+}
+
+.temperature {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--color-primary);
+}
+
+
+.spotlight-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--color-secondary);
+    text-decoration: none;
+    color: var(--color-text);
+    transition: background-color 0.2s;
+}
+
+.spotlight-item:hover {
+    background-color: var(--color-accent-1); 
+    border-radius: var(--border-radius);
+}
+
+.company-logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--color-accent-2); 
+}
+
+
+@media (max-width: 900px) {
+    .main-layout-grid {
+        grid-template-columns: 1fr; 
+    }
+    .hero {
+        height: 40vh;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: none;
+        position: absolute;
+        top: 70px; 
+        right: 0; 
+        width: 100%; 
+        background-color: var(--color-primary); 
+        box-shadow: var(--card-shadow);
+        z-index: 100;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav.active {
+        display: block;
+    }
+
+     .hero-content h1 {
+        font-size: 2rem;
+      }
+
+    .hero-content p {
+    font-size: 1rem;
+    }
+
+    .home-container {
+        flex-direction: column;
+    }
+}
